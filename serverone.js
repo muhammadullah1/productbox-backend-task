@@ -1,7 +1,6 @@
 const http = require('http');
 const axios = require('axios');
 const cheerio = require('cheerio');
-const RSVP = require('rsvp');
 const { promisify } = require('util');
 
 const server = http.createServer((req, res) => {
@@ -80,3 +79,9 @@ const port = 3000;
 server.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
+
+// ==================================== //
+// In the upper code, the main control flow strategy used is: Promises:
+// Promises are the primary control flow mechanism in this code. The code uses Promises for handling asynchronous operations and to make multiple HTTP requests concurrently to fetch the titles of given websites. The axios.get() function returns a Promise, and the promisify() function from the 'util' module is used to convert the fetchTitle function, which originally used callbacks, into a function that returns a Promise.
+// ==================================== //

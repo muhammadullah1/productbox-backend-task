@@ -1,5 +1,4 @@
 const http = require('http');
-const https = require('https');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
@@ -70,3 +69,9 @@ const port = 3000;
 server.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
+
+// ============================ //
+// In the upper code, the main control flow strategy used is: Async/Await
+// The provided code utilizes the modern async/await pattern for handling asynchronous operations in a more synchronous-like manner. With async/await, the code becomes more readable and easier to reason about compared to the callback pattern.
+// ============================ //

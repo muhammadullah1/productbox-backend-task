@@ -81,3 +81,8 @@ const port = 3000;
 server.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
+//====================================//
+// In this upper code, the main control flow strategy used is:Reactive Programming with RxJS (Reactive Extensions for JavaScript)
+// The code uses RxJS, a library for reactive programming, to handle the control flow and manage asynchronous operations in a declarative and functional style. The key components from RxJS used in this code are the from function to convert arrays to Observables, and operators like mergeMap and toArray to handle the asynchronous operations.
+//=====================================//
